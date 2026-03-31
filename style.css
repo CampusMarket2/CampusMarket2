@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+  background: url('C:\Users\ROONEY\OneDrive\Pictures\background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+}
+
+.active {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 320px;
+}
+
+.logo {
+  width: 220px;
+}
+
+.small-logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.input-box i {
+  margin-right: 10px;
+  color: #888;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.main-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background: white;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+}
+
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  border-radius: 8px;
+}
+
+
+#success h2 {
+  font-size: 24px;
+}
+
+#success p {
+  color: gray;
+}

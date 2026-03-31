@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusMarket</title>
+
+  <link rel="stylesheet" href="style.css">
+
+ 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="splash" class="screen active center">
+  <img src="C:\Users\ROONEY\OneDrive\Pictures\fffff.jpeg" class="logo">
+</div>
+
+<div id="register" class="screen center">
+  <div class="card">
+    <img src="C:\Users\ROONEY\OneDrive\Pictures\fffff.jpeg" class="small-logo">
+
+    <h2 class="title">Register</h2>
+
+    <div class="input-box">
+      <i class="fa fa-user"></i>
+      <input id="reg-user" type="text" placeholder="Email/mobile number">
+    </div>
+
+    <div class="input-box">
+      <i class="fa fa-lock"></i>
+      <input id="reg-pass" type="password" placeholder="Password">
+    </div>
+
+    <div class="input-box">
+      <i class="fa fa-lock"></i>
+      <input id="reg-confirm" type="password" placeholder="Confirm Password">
+    </div>
+
+    <button class="main-btn" onclick="goToLogin()">Done</button>
+
+    <p class="link" onclick="showScreen('login')">
+      Sign in →
+    </p>
+  </div>
+</div>
+
+
+<div id="login" class="screen center">
+  <div class="card">
+    <img src="C:\Users\ROONEY\OneDrive\Pictures\fffff.jpeg"class="small-logo">
+
+    <h2 class="title">Sign in your account</h2>
+
+    <div class="input-box">
+      <i class="fa fa-user"></i>
+      <input id="login-user" type="text" placeholder="Email/mobile number">
+    </div>
+
+    <div class="input-box">
+      <i class="fa fa-lock"></i>
+      <input id="login-pass" type="password" placeholder="Password">
+    </div>
+
+    <p class="forgot">Forgot your password?</p>
+
+    <button class="main-btn" onclick="login()">Login</button>
+  </div>
+</div>
+
+
+<div id="products" class="screen">
+
+  <div class="top-bar">
+    <h2>Products</h2>
+    <div class="cart-icon" onclick="openCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </div>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="C:\Users\ROONEY\Downloads\tshurt.webp">
+      <h3>T-Shirt</h3>
+      <p>$20</p>
+      <button onclick="addToCart('T-Shirt', 20, 'C:\Users\ROONEY\Downloads\tshurt.webp')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\ROONEY\Downloads\aaaa.webp">
+      <h3>Sneakers</h3>
+      <p>$50</p>
+      <button onclick="addToCart('Sneakers', 50, 'C:\Users\ROONEY\Downloads\aaaa.webp')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\ROONEY\Downloads\book.webp">
+      <h3>Books</h3>
+      <p>$35</p>
+      <button onclick="addToCart('Books', 35, 'C:\Users\ROONEY\Downloads\book.webp')">Add to Cart</button>
+    </div>
+
+  </div>
+</div>
+
+
+<div id="cart" class="screen">
+  <h2>Your Cart</h2>
+
+  <div id="cart-items"></div>
+
+  <h3 id="total">Total: $0</h3>
+
+  <button class="main-btn" onclick="checkout()">Checkout</button>
+</div>
+
+
+<div id="checkout" class="screen center">
+  <div class="card">
+    <h2>Checkout</h2>
+
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Address">
+    <input type="text" placeholder="Phone Number">
+
+    <button class="main-btn" onclick="placeOrder()">Place Order</button>
+  </div>
+</div>
+
+<div id="success" class="screen center">
+  <div class="card">
+    <h2>🎉 Order Successful</h2>
+    <p>Thanks! We’ll keep you up to date</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
